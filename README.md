@@ -9,4 +9,4 @@ Then show the user the `Name` andt `Picture` of the person who is his perfect fr
 
 ### Note: While taking the survey, it's require from the user to provid his name and an a valid Image Link of the his picture.
 
-### Application Link:
+### Application Link: https://taylor-yao.github.io/FriendFinder/
