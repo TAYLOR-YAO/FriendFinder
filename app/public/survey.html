@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>mach freinds</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container main">
+        <div class="headPage"><h1>Match Freinds</h1></div>
+        <div class="row" id='linkDiv'>
+            <a id="linkToHome" href="/">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIaSURBVGhD7Zi9LgRRGIZXFDQ06GgUtPS4AXegVEjELXADCm5ARKNFL0Si8lNTaCgkVDQUEuF9Yr/kyzizOz/7M8t5kieZnXPO9zNmz8yqRSKRrrNat6dZl191Oe45+uSWtCZMzjHWE/TLXZlswmSMOZVmQB5KX/hFXX+OOcytJEPyRPqC+cz5RmOVYkReSl9o8qqH/lqsYW0lGJc30he4J0PfA84x5ueylhhdZUreS19Ys50ptKMRg1hdYUY+SV9QnmeFf8YgsYjZUebli7QiPuWazAtrWGtxiEnsjrAo36Ql/5BLsiisJYbFIzY52koy6btsRVJiEMvilr04DUneBq9yQbYKYhHT4he9XRuyIS0BPstZ2WqISWyfi9ylYavclj4wW+W0bBfETm7p1FD4ZTP08LqVE7LdkINcPnfaQ7Yhg/JI+kDXclR2CnKR09dATdSWCV7kTqUPcCaHZachJ7l9LdTW9GWTq3Al/UJs21aYAXIn66HG1LsjdF+aVWsEU7+vB9JP9A++LI3MSb8+i6xphm/E14TU/IsxeSeZwN59Xj/GqjRCTfZMo1ZqDsLvguWfw8o2AtSY+TdMmUYe5WSKjNm8oo3kokwjD5xIgTGbFxvJQ2xExkYCxEaM2IiMjQSIjRh/spEdudLETWnzszbCmlAsL7ltfulG8pq1kbz+70b4X9JxQfdlGoyF1mSRmiKRSKTnqdW+AUiP9LRPF2KfAAAAAElFTkSuQmCC">
+            <p>Home</p> 
+            </a>
+        </div>
+        <div class="box" id="survey">
+            <div class="surveyHeader"><h2>Find The Perfect Match</h2></div>
+        <div>
+            <h3>About you</h3>
+            <p>Name (Required)</p>
+            <input type="input" id="name" placeholder="name">
+            <p>Link to Photo Image (Required)</p>
+            <input type="input" id="newimage" placeholder=" add image url">
+        </div>
+        <h4>Question 1</h4>
+        <p>You are funny</p>
+        <select class="chosen-select" id="q1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <br>
+        <h4>Question 2</h4>
+        <p>You beleave It's better to smil however hurts you feel</p>
+        <select class="chosen-select" id="q2">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+       <h4>Question 3</h4>
+        <p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
+        <select class="chosen-select" id="q3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h4>Question 4</h4>
+        <p>Your mind is always buzzing with unexplored ideas and plans.</p>
+        <select class="chosen-select" id="q4">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h4>Question 5</h4>
+        <p>People can rarely upset you.</p>
+        <select class="chosen-select" id="q5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        
+        <h4>Question 6</h4>
+        <p>It is often difficult for you to relate to other people’s feelings.</p>
+        <select class="chosen-select" id="q6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h4>Question 7</h4>
+        <p>In a discussion, truth should be more important than people’s sensitivities.</p>
+        <select class="chosen-select" id="q7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h4>Question 8</h4>
+        <p>You rarely get carried away by fantasies and ideas.</p>
+        <select class="chosen-select" id="q8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h4>Question 9</h4>
+        <p>You feel more energetic after spending time with a group of people.</p>
+        <select class="chosen-select" id="q9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h4>Question 10</h4>
+        <p>Generally speaking, you rely more on your experience than your imagination.</p>
+        <select class="chosen-select" id="q10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    <br>
+    <br>
+        <button type="button" id="match">Match</button>
+    </div>
+    <div class="box" id="partner">
+        <div id="result" class="modal">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+                <div class="resultHear">Your Match</div>
+                <div class="resultHear" id="matchName"></div>
+                <div id="matchImageSize">
+                    <img id="matchImage" src="" alt=" Matched Partner">
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</div>
+
+    <a class="signerture" href="https://www.linkedin.com/in/taylor-yao-a75325153/">&copy;Copyrith Taylor Yao, 2018</a>
+
+<script src="/js/app.js"></script> 
+
+</body>
+</html>
