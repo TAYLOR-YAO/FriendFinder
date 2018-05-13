@@ -55,7 +55,7 @@ module.exports = friends = [
     },
     {
         name:"Gaston Adoboe",
-        image:"eli.jpg",
+        image:"gaston.jpg",
         scores:[4,5,4,5,4,1,2,1,4,1]
         
     }

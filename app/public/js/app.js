@@ -1,19 +1,14 @@
 $(document).ready( function(){
     
     var modal = $("#result")
-    var matchImage = $("#matchImage");
-    var btn = $("#match");
     var span = $(".close");
     modal.hide();
-   
     $(span).on("click", function() {
         modal.hide();
     });
 
     $(document).on("click","#match", function(event){
-        
         event.preventDefault();
-        
         var q1 = parseInt($("#q1").val());
         var q2 = parseInt($("#q2").val());
         var q3 = parseInt($("#q3").val());
@@ -26,7 +21,6 @@ $(document).ready( function(){
         var q10 = parseInt($("#q10").val());
 
         var scoresArray = [q1,q2,q3,q4,q5,q6,q7,q8,q9,q10];
-
         var newFriends ={
             name: $("#name").val().trim(),
             image: $("#newimage").val().trim(),
@@ -38,10 +32,7 @@ $(document).ready( function(){
             data: JSON.stringify(newFriends),
             contentType: 'application/json',
             method: 'POST'})
-            .then(function(data) {
-            console.log("Match", data);
-            console.log("Match Image: ", data.image);      
-            
+            .then(function(data) {     
             $("#matchImage").attr("src",data.image)
             $("#matchName").text(data.name)
             modal.show();

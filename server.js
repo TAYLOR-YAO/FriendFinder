@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, '/app/public')));
 
 app.use('/', htmlRoutes)
 app.use("/api", apiRoutes)
-//server binding--------------------
+
 app.listen(PORT, function() {
     console.log("App listening on PORT: " + PORT);
   });

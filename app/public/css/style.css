@@ -9,6 +9,7 @@
     text-align: center;
     color: #fff;
     font-size: 50px;
+    margin: auto;
     margin-bottom: 20px; 
 }
 .headPage h1{
@@ -18,18 +19,19 @@
     text-align: center;
     color: #fff;
     font-size: 34x;
-    position: absolute;
-    left: 33%;
+    margin: 40px auto;
 }
 .homePage h1{
     font-size: 80px;
 }
 .main{
-    padding: 10px;
+    padding: 20px 150px;
+    margin-bottom: 20px;
 }
 .box{
     float: left;
     width: 50%;
+    margin: auto;
     height: 600px;
     background-color: #fff;
     padding: 10px;
@@ -38,11 +40,12 @@
     
 }
 #linkDiv{
-    position: absolute;
-    left: 47.9%;
     text-align: center;
     width: 60px;
     height: 65px;
+    margin: auto;
+    position: relative;
+    bottom: 10px;
     background-color: #fff;
     border: #ED2939 1px solid;
 }
@@ -63,9 +66,8 @@
     bottom: 20px;  
 }
 #fondFriendsDiv{
-    position: absolute;
-    left: 560px;
-    top: 20%;
+    margin: 40px auto;
+   width: 320px;
 }
 #fondFriendsDiv a{
     text-decoration: none;
@@ -118,7 +120,7 @@ input{
     margin-bottom: 5px;
 }
 #survey{
-    border-right:  #ED2939 solid 40px;
+    border-right:  #ED2939 solid 10px;
     overflow: scroll;
     line-height: normal;
     
@@ -127,8 +129,10 @@ input{
     font-size: initial;
 }
 #partner{
-    border-left:  #ED2939 solid 40px;
-    background-image: url(../img.jpg);
+    border-left:  #ED2939 solid 10px;
+    background-image: url(../group.png);
+    background-repeat: no-repeat;
+    background-size: auto;
     padding-top: 0;
     padding: 0px;
 }
@@ -160,11 +164,13 @@ input{
     color:#fff;
     text-align: center; 
     margin-top: 0px;
+    padding-top: 10px;
     border-bottom: 1px solid #fff; 
     border-radius: 5px;
 }
 #matchName{
-    text-align: initial;
+    text-align: center;
+    font-size: 24px;
 }
 #matchImageSize{
     width: 100%;
@@ -188,78 +194,76 @@ input{
     text-decoration: none;
     cursor: pointer;
 }
-.signerture{
-    position: relative;
-    top: 80px;
-    left: 600px;
-    height: 40px; 
+.signertureHolder{
+    margin: auto 30px;
+    margin-top: 50px;
+    margin: 20px;
+    height: 80px; 
     text-align: center;
     color:#000000;
     opacity: 0.3;
 }
+
 #homeSignerture{
+    margin: auto;
     position: relative;
-    top: 750px;
-    height: 40px; 
-    text-align: center;
+    top: 50px;
     color: #000000;
-    opacity: 0.3;
-    text-orientation: none;
 }
 
 
-
-@media only screen and (max-width: 768px) {
-    html{
-        width: 100%;
-    }
-    #fondFriendsDiv{
-        position: absolute;
-        left: 30%;
-        bottom: 60px;
-        margin-top: 100px;
-    }
-    .homePage{
-        position: relative;
-        left: 0px;
-        margin-top: 30px;
-    }
-    #homeSignerture{
-        position: absolute;
-        bottom: 20px;
-        left:280px;
-       
-    }
-    .resultHear{
-        color: #fff;
-    }
-    #linkDiv{
-        position: relative;
-        top: 65px;
-        right: 50px;
-        margin-right: 20px;
-    }
-
+@media only screen and (max-width: 375px) {
+   html{
+    width: 100%;
+    font-size: 12px;
+   }
+   .box{
+       width: 100%;
+       float: none;
+   }
+   .main{
+    padding: 20px 20px;
+   }
+   #partner{
+       margin-left: -10px;
+       margin-top: 20px;
+   }
+  
 }
+
 @media only screen and (max-width: 425px) {
     html{
         width: 100%;
-    }
-    #homeSignerture{
-        position: relative;
-        bottom: 50px;
-        left:0px;
-        margin-bottom: 20px;
-    }
+       }
+       .main{
+        padding: 20px 20px;
+       }
+       .box{
+           width: 100%;
+           float: none;
+       }
+       #partner{
+           margin-left: -10px;
+           margin-top: 20px;
+       }
+      
 }
-
-@media only screen and (max-width:375px) {
+@media only screen and (max-width: 768px) {
     html{
         width: 100%;
-        font-size: 18px;
-    }
-    #linkToHome{
-        margin-right: 10px;
-    }
-    
+       }
+       .box{
+           width: 100%;
+           float: none;
+       }
+       #partner{
+           margin-left: -10px;
+           margin-top: 20px;
+       }
+      
 }
+
+
+
+   
+
